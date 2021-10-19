@@ -17,8 +17,8 @@ public class listacir {
         ultimo=null;
         
     }
-    public nodos vacio(){
-        return ultimo=null;
+    public boolean vacio(){
+        return ultimo==null;
     }
     public listacir insertar(int elemento){
         nodos nuevo=new nodos (elemento);
