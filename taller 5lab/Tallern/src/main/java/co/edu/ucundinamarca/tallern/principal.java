@@ -7,6 +7,7 @@ package co.edu.ucundinamarca.tallern;
 
 import java.util.Scanner;
 import org.apache.log4j.Logger;
+import org.apache.log4j.chainsaw.Main;
 
 /**
  *
@@ -18,7 +19,7 @@ public class principal {
     public static void main(String[] args) {
         
     Scanner teclado = new Scanner(System.in);
-  ListaCircular 1= new ListaCircular 
+  ListaCircular lista= new ListaCircular();
           int opcion = 0;
           do{
               System.out.print("lista simple");
@@ -28,18 +29,19 @@ public class principal {
                  System.out.print("4eliminar nodo");
                   System.out.print("5 despejar lista");
                    System.out.print("salir");
-                   opcion = teclado.nextInt();
+                  opcion = teclado.nextInt();
+                  switch (opcion){
                    case 1:
                    System.out.println("\n dar nodo");
-                   System.out.println("\n igresar valor deñ nodo buscar");
+                   System.out.println("\n igresar valor del nodo buscar");
                    int dato = teclado.nextInt();
-                   1-ingresarNodo(dato);
+                   lista.data(dato);
                    break;
                    case 2:
                    System.out.println("\n dar nodo");
                    System.out.println("\n igresar valor deñ nodo buscar");
-                   int dato = teclado.nextInt();
-                   1-ingresarNodo(dato);
+                   int datos = teclado.nextInt();
+                   lista.data(datos);
                    break;
                    case 3:
                    break;
@@ -47,14 +49,17 @@ public class principal {
                    break;
                    case 5:
                    System.out.println("\n listado de nodosr");
-                   1-ingresarNodo(dato);
+                   int datoss = teclado.nextInt();
+                   lista.data(datoss);
                    break;
-                   default;
+                   
+                   default:
           }
-          }
+          }while(opcion !=6);
 }
+
                    
-                   
-               
+}
+
               
           

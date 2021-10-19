@@ -17,15 +17,28 @@ public class ListaCircular {
         ultimo = null;
           
     }
-    public void ingresarNodo(int x){
+    public  ListaCircular data(int x){
+        
+        nodo nuevo=new nodo (x);
+      if(ultimo!=null){
+          nuevo.siguiente=ultimo.siguiente;
+          ultimo.siguiente=nuevo;
+          
+      }
+      ultimo=nuevo;
+      return this;
+    }
+    
+    
         public void buscarnodo(int x){
-         nodo actual = new nodo();
+         nodo actual = new nodo(x);
          actual = primero;
-         boolean encontrar = flase;
+         boolean encontrar = false;
          do{
              if (actual.dato==x){
                  encontrar = true;
              }
+             
              actual = actual.siguiente;
          }while(actual != primero);
          if(encontrar == true){
@@ -36,6 +49,5 @@ public class ListaCircular {
          }
         public void desplegarLista(){
         }
-    
     
 }
