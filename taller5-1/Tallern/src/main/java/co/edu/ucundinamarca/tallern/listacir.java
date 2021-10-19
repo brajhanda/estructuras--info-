@@ -5,6 +5,8 @@
  */
 package co.edu.ucundinamarca.tallern;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ZARAT
@@ -33,7 +35,9 @@ public class listacir {
         String cadena="";
         do{
             cadena=cadena + "["+auxiliar.dato+"]->";
-        }while (auiliar!=ultimo.siguiente);
-        
+        }while (auxiliar!=ultimo.siguiente);
+        JOptionPane.showMessageDialog(null,cadena,"Mostrar la lista circular",JOptionPane.INFORMATION_MESSAGE);
+    }
+}
        
 
