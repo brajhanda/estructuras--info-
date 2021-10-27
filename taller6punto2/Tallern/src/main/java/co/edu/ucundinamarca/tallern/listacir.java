@@ -36,17 +36,7 @@ public class listacir {
       return this;
     }
     
-      public void modificarnodo(int elemeto){
-            nodos actual = new nodos(elemeto);
-         actual = primero;
-         do{
-               if (actual.dato==elemeto){
-                   System.out.print("ingrese para modificar el dato");
-                   actual.dato = teclado.nextInt();
-               }
-             actual = actual.siguiente;
-         }while (actual!=primero);
-         }
+      
       
     public void mostrarLista(){
         nodos auxiliar=ultimo.siguiente;
@@ -57,25 +47,6 @@ public class listacir {
         }while (auxiliar!=ultimo.siguiente);
       System.out.println("sus datos"+ cadena );
     }
-  public void buscarrrnodo(int elemeto ){
-            nodos actual = new nodos (elemeto);
-         actual = primero;
-         boolean encontrar = false;
-         do{
-               if (actual.dato==elemeto){
-                  encontrar = true;
-               }  
-        
-         }while (actual!=primero);
-         
-          actual = actual.siguiente;
-          
-         if(encontrar == true){
-             System.out.println(" encontrado");
-         }else{
-             System.out.println(" no encontrado");
-             }
-         }
         public boolean eliminardodo(int elemeto){
             nodos actual;
             boolean encontrado=false;
