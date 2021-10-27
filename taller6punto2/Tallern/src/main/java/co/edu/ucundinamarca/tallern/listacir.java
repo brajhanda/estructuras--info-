@@ -71,9 +71,9 @@ public class listacir {
           actual = actual.siguiente;
           
          if(encontrar == true){
-             System.out.println("nodo encontrado");
+             System.out.println(" encontrado");
          }else{
-             System.out.println("nodo no encontrado");
+             System.out.println(" no encontrado");
              }
          }
         public boolean eliminardodo(int elemeto){
