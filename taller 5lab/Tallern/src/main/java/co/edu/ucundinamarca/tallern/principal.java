@@ -41,7 +41,7 @@ public class principal {
                    System.out.println("\n dar nodo");
                    System.out.println("\n igresar valor deñ nodo buscar");
                    int datos = teclado.nextInt();
-                   lista.data(datos);
+                   lista.buscarnodo(datos);
                    break;
                    case 3:
                    break;
@@ -50,7 +50,7 @@ public class principal {
                    case 5:
                    System.out.println("\n listado de nodosr");
                    int datoss = teclado.nextInt();
-                   lista.data(datoss);
+                   
                    break;
                    
                    default:

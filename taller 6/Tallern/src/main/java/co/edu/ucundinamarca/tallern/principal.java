@@ -16,8 +16,7 @@ public class principal {
         int opcion = 0;
         do {
             System.out.println("Elija una opcion");
-            System.out.println("1 ingre nodo");
-            System.out.println("mostrar la lista");
+            System.out.println("1 ingre nodo");;
             System.out.println("busca en la lista");
             System.out.println("modifica");
             System.out.println("sal");
@@ -27,20 +26,16 @@ public class principal {
                     int dato = teclado.nextInt();
                     lis.ingresar(dato);
                     break;
+                
                 case 2:
-                    System.out.println("mostrar lista");
-                    lis.mostrar();
-                    break;
-                case 3:
                     System.out.println("busca");
                     System.out.println("ingrese el dato a buscar");
                     int dato3 = teclado.nextInt();
                     break;
-                case 4:
+                case 3:
                     System.out.println("ingresa dato a kmodificar");
-                    int dato4 = teclado.nextInt()
-                    :
-lis.modificar(dato4);
+                    int dato4 = teclado.nextInt();
+                    lis.modificar(dato4);
             }
         } while (opcion != 5);
     }

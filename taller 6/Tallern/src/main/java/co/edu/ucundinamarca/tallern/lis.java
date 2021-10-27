@@ -37,52 +37,25 @@ public class lis {
             primero.anterior=ultimo;
             
             
-            
-            
+          
         }
-        public void modificar(){
+    }
+   
+        public void modificar(int x){
         nod actual=new nod();
       actual=primero;
       do{
-          System.out.println(actual.datos);
+          if(actual.datos==x){
+    
+          System.out.println("ingrese datos a modificar");
+          actual.datos=teclado.nextInt();
+          }    
           actual=actual.siguiente;
-           System.out.println(actual.datos);
-           actual=actual;
       }while(actual!=primero);
-      public void buscar(int x){
-nod actual=new nod();
-actual=ultimo;
-boolean encontrado=false;
+      }
+      }
 
-do{
-if(actual.datos==x){
-encontrado=true;
-datos=actual.datos;
-}
-actual=actual.anterior;
-}while(actual!=ultimo);
-if(encontrado==true){
-System.out.println("nodo encontrado");
-System.out.println(datos);
-}else{
-System.out.println("nodo no encontrado");
-}
-}
-public void modificar(int x){
-nod actual=new nod();
-actual=primero;
-do{
-if(actual.datos==x){
-System.out.println("ingrese un nuevo valor");
-actual.datos=teclado.nextInt();
-}
-    actual=actual.siguiente;
-}while(actual!=primero);
-}
-}    
-          
-}
-}
+
 
 
 

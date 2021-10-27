@@ -47,6 +47,8 @@ public class ListaCircular {
                System.out.println("Nodo no encntrado");
              }
          }
+      
+
         public void desplegarLista(){
         }
     
