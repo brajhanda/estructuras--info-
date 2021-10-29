@@ -22,3 +22,8 @@ public class solados
             System.out.print("el soldado sobreviviente es el numero"+ N );
         }
 }
+/*
+lo hice con el random profe porque no pude de la otra manera con la eliminacion 
+es como pues por itentar resolverlo de alguna manera unque se que no lo pido asi
+profe que pena 
+/*

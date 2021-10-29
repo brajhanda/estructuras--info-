@@ -5,7 +5,7 @@
 package co.edu.ucundinamarca.tallern;
 
 public class Hanoi {
-    private Pil int tubo;             
+    private Pila int tubo;             
     private final int dis;       
     
     public Hanoi () { 

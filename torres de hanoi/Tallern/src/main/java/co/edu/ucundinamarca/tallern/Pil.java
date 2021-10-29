@@ -9,17 +9,17 @@ package co.edu.ucundinamarca.tallern;
  *
  * @author ZARAT
  */
-public class NodoPila {
+public class Pil {
     int elemento;
-    NodoPila siguiente;
-    NodoPila(int x){
+    Pil siguiente;
+    Pil(int x){
         elemento = x;
         siguiente = null;
     }
 }
-class PilaLista{
-    private NodoPila cima;
-    public PilaLista()
+class Pila{
+    private Pil cima;
+    public Pila()
     {
         cima = null;
     }
@@ -35,8 +35,8 @@ class PilaLista{
     }
     public void insertar(int elemento)
     {
-        NodoPila nuevo;
-        nuevo = new NodoPila(elemento);
+        Pil nuevo;
+        nuevo = new Pil(elemento);
         nuevo.siguiente = cima;
         cima = nuevo;        
     }
@@ -52,7 +52,7 @@ class PilaLista{
         return aux;
     }
     public void limpiarPila(){
-        NodoPila t;
+        Pil t;
         while (pilaVacia()){
             t = cima;
             cima = cima.siguiente;
