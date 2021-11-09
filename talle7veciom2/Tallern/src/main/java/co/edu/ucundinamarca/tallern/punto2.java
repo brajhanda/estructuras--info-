@@ -9,68 +9,68 @@ package co.edu.ucundinamarca.tallern;
  *
  * @author ZARAT
  */
-/*
- * LinkedStack.java
- *
- */
-
 public class punto2 {
 
-  class Node {
-    Object elem;
-    Node Next;
+    class Nodo {
 
-    public Node(Object o) {
-      elem = o;
-      Next = null;
+        Object objet;
+        Nodo siguiente;
+
+        public Nodo(Object o) {
+            objet = o;
+            siguiente = null;
+        }
     }
-  }
 
-  Node end;
-  int size;
+    Nodo fin;
+    int size;
 
-  public punto2() {
-    end = null;
-    size = 0;
-  }
-
-  public void push(Object o) {
-    Node new_node = new Node(o);
-    if (end == null)
-      end = new_node;
-    else {
-      new_node.Next = end;
-      end = new_node;
+    public punto2() {
+        fin = null;
+        size = 0;
     }
-    size++;
-  }; // inserts an object onto the stack
+
+    public void push(Object o) {
+        Nodo new_Nodo = new Nodo(o);
+        if (fin == null) {
+            fin = new_Nodo;
+        } else {
+            new_Nodo.siguiente = fin;
+            fin = new_Nodo;
+        }
+        size++;
+    }
+
+    ; 
 
   public Object pop() {
-    if (end == null)
-      return null;
-    ;
-    Object o = end.elem;
-    end = end.Next;
-    size--;
-    return o;
-  }// Gets the object from the stack
+        if (fin == null) {
+            return null;
+        }
+        ;
+        Object o = fin.objet;
+        fin = fin.siguiente;
+        size--;
+        return o;
+    }
 
-  public boolean isEmpty() {
+    public boolean isEmpty() {
 
-    return (size == 0);
-  }
+        return (size == 0);
+    }
 
-  public int size() {
+    public int size() {
 
-    return size;
-  }
+        return size;
+    }
 
-  public Object end() {
+    public Object end() {
 
-    if (end == null)
-      return null;
-    else
-      return end.elem;
-  }
+        if (fin == null) {
+            return null;
+        } else {
+            return fin.objet;
+        }
+    }
 
-} // class LinkedStack
+}
