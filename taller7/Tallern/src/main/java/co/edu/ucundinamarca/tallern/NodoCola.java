@@ -14,7 +14,8 @@ public class NodoCola {
     NodoCola siguiente;
     public NodoCola(int x)
     {
-        
+        elemento = x;
+   siguiente = null;
     }
 }
 class Colalista
@@ -53,9 +54,10 @@ public int quitar ()
 }
 public void borrarCola()
 {
+    while(frente!=null){
     frente = frente.siguiente;
 
-
+    }
 }
 public boolean colaVacia()
 {

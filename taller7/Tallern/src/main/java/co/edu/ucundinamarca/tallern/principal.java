@@ -18,11 +18,12 @@ public class principal {
         pila.insertar(5);
         pila.insertar(6);
         
-        print(""+pila.quitar());
-        print(""+pila.quitar());
-        print(""+pila.quitar());
-        print(""+pila.quitar());
-        print(""+pila.quitar());
+        System.out.println(""+pila.quitar());
+        System.out.println(""+pila.quitar());
+        System.out.println(""+pila.quitar());
+        System.out.println(""+pila.quitar());
+        System.out.println(""+pila.quitar());
+        System.out.println(""+pila.quitar());
     }
 public static void cola()
     {
@@ -34,27 +35,25 @@ public static void cola()
         cola.insertar(5);
         cola.insertar(6);
         
-        print(""+cola.quitar());
-        print(""+cola.quitar());
-        print(""+cola.quitar());
-        print(""+cola.quitar());
-        print(""+cola.quitar());
+        System.out.println(""+cola.quitar());
+        System.out.println(""+cola.quitar());
+        System.out.println(""+cola.quitar());
+        System.out.println(""+cola.quitar());
+        System.out.println(""+cola.quitar());
     }
 
     static Logger log = Logger.getLogger(principal.class.getName());
 
     public static void main(String[] args) {
-        {
+        
            pila();
            cola();
         }
-        public static void print(String numero){
-            System.out.print(numero);
-            
+        
         }
 
-}
-}
+
+
 
 
 
