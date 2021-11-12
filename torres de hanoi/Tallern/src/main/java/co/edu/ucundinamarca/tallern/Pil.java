@@ -16,6 +16,10 @@ public class Pil {
         elemento = x;
         siguiente = null;
     }
+
+    Pil() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
 class Pila{
     private Pil cima;

@@ -13,16 +13,16 @@ public class arbol {
         raiz = null;
     }
 
-    public void insertar(int i, Object fruta) {
-        Nodo n = new Nodo(i);
-        n.contenido = fruta;
+    public void insertar(int i, Object manazana) {
+        Nodo a = new Nodo(i);
+        a.contenido = manazana;
         if (raiz == null) {
-            raiz = n;
+            raiz = a;
         } else {
             Nodo aux = raiz;
             while (aux != null) {
-                n.padre = aux;
-                if (n.llave >= aux.llave) {
+                a.padre = aux;
+                if (a.llave >= aux.llave) {
                     aux = aux.derecha;
                 } else {
                     aux = aux.izquierda;
